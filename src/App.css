@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary: #2363bc;
+  --secondary: #2b3452;
+  --bi: hsl(249, 58%, 70%);
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: "Poppins";
+  /* background: var(--secondary); */
+  background-image: linear-gradient( --bi, --secondary, --primary);
+  /* background-image: linear-gradient(79deg, #fcfced, #fcedfc 48%, #ebf6ff); */
+}
+* {
+  color: var(--primary);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin: 20px 0;
+}
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--bi);
+  background: var(--primary);
+  cursor: pointer;
+}
+
+/* navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--primary);
+}
+header nav a {
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+}
+header nav a:active {
+  background: var(--primary);
+}
+
+/* page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* help layout */
+.help-layout nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.help-layout nav a {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.help-layout nav a:hover {
+  border-color: var(--primary);
+}
+.help-layout nav a:active {
+  background: var(--primary);
+}
+
+/* faq */
+.faq .question {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+/* form*/
+form{
+margin-top: 30px;
+}
+form input, form textarea{
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 0;
+  width: 300px;
+  color: var(--secondary);
+}
+form label span{
+  margin-bottom: 10px;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(79deg, #fcfced, #fcedfc 48%, #ebf6ff);
+}
+.auth-form-container,
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-container {
+  padding: 5rem;
+  border: 1px solid var(--bi);
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  border: none;
+  background-color:var(--bi);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dashboard-container{
+ max-width: 700px;
+ height: 500px;
+ margin: auto;
+ padding: 0 1rem;
+position: relative;
+top: 10%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.top{
+  width: 100%;
+  margin: 1rem auto;
+
+}
+.description{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+.bottom{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(80, 57, 164, 0.2);
+}
+.dashboard-container p{
+ font-size: 1.6rem;
+ margin:  1rem;
+}
+.dashboard-container h1{
+ font-size: 4rem;
+}
+
+.bold{
+  font-weight: 700;
+}
+.search{
+  text-align: center;
+  padding: 1rem;
+}
+.dashboard-container input{
+padding: .7rem 1.5rem;
+font-size: 1.7rem ;
+border-radius: 25px;
+/* border: 1px solid rgba(255, 255, 255, 0.2) */
+border: 1px solid var(--bi);
+}
+::placeholder{
+  color: var(--bi);
+}
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
